@@ -1,11 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/styles.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/97913f9ab0.js" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>Weather App</title>
 </head>
+
 <body>
-    Hello World
+    <div class="container">
+        <div class="app">
+            <form id="seach-form">
+                <div class="row no-gutters">
+                    <div class="col-6">
+                        <input type="search" class="form-control shadow-sm" placeholder="Enter a city..."
+                            autocomplete="off" id="search-text-input" />
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-search shadow-sm">
+                            Search
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+
+            <div class="row">
+                <h3 id=city>Dublin</h3>
+            </div>
+            <div class="row no-gutters">
+                <div class="col">
+                    <h1 id="temp"><i class="fas fa-sun"></i> 10 </h1>
+                    <p class="units">ºC </p>
+                    <p>
+                        <span id="time">
+                            Sunday 15:02 </span>
+                        | Sunny </p>
+
+                </div>
+
+                <div class="col-8">
+                    <p>Precipitation: 63%</p>
+                    <p>Wind: 74km/h</p>
+                    <p>Humidity: 55%</p>
+                </div>
+            </div>
+            <div class="row forecast shadow">
+                <div class="col forecast-col">
+                    <div class="row">
+                        <p>Monday</p>
+                    </div>
+                    <div class="row"><i class="fas fa-cloud"></i></div>
+                    <div class="row">
+                        <p>11 ºC</p>
+                    </div>
+                </div>
+
+                <div class="col forecast-col">
+                    <div class="row">
+                        <p>Tuesday</p>
+                    </div>
+                    <div class="row"><i class="fas fa-cloud"></i></div>
+                    <div class="row">
+                        <p>11 ºC</p>
+                    </div>
+                </div>
+                <div class="col forecast-col">
+                    <div class="row">
+                        <p>Wednesday</p>
+                    </div>
+                    <div class="row"><i class="fas fa-cloud-showers-heavy"></i></div>
+                    <div class="row">
+                        <p>12 ºC</p>
+                    </div>
+                </div>
+                <div class="col forecast-col">
+                    <div class="row">
+                        <p>Thursday</p>
+                    </div>
+                    <div class="row"><i class="fas fa-cloud-sun-rain"></i></div>
+                    <div class="row">
+                        <p>11 ºC</p>
+                    </div>
+                </div>
+                <div class="col forecast-col">
+                    <div class="row">
+                        <p>Friday</p>
+                    </div>
+                    <div class="row"><i class="fas fa-sun"></i></div>
+                    <div class="row">
+                        <p>12 ºC</p>
+                    </div>
+                </div>
+                <div class="col forecast-col">
+                    <div class="row">
+                        <p>Saturday</p>
+                    </div>
+                    <div class="row"><i class="fas fa-sun"></i></div>
+                    <div class="row">
+                        <p>12 ºC</p>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                Open-source code, by Ivana Milkovic
+            </footer>
+        </div>
+    </div>
+
+
+
+
+
+    </div>
+    </div>
+
+
 </body>
+
 </html>
