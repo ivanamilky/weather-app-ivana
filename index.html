@@ -33,23 +33,28 @@
 
 
             <div class="row">
-                <h3 id=city>Dublin</h3>
+                <h3 id=city></h3>
             </div>
             <div class="row no-gutters">
                 <div class="col-3">
-                    <h1 id="temp"><i class="fas fa-sun"></i>  <strong > 10</strong> </h1>
+                    <h1 id="temp"> <div id="sun" class="fas fa-sun"></div>   <strong > </strong> </h1>
                     <p class="units">°C  | °F  </p>
                     <p>
                         <span id="time">
-                            Sunday 15:02 </span>
-                        | Sunny </p>
+                            Sunday 15:02  </span> |
+                            <span id="description">
+                             Sunny
+                            </span>
+                         </p>
 
                 </div>
 
                 <div class="col-8">
-                    <p>Precipitation: 63%</p>
-                    <p>Wind: 74km/h</p>
-                    <p>Humidity: 55%</p>
+                    <ul>
+                    <li>Wind: <span id="wind"></span>km/h</li>
+                    <li>Humidity: <span id="humidity"></span>%</li>
+                    </ul>
+                 
                 </div>
             </div>
             <div class="row forecast shadow">

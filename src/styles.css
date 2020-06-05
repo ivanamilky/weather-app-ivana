@@ -28,7 +28,7 @@ h3 {
 .units {
   display: inline;
   position: relative;
-  top: -20px;
+  top: -15px;
   margin-left: 0px;
 }
 
@@ -40,8 +40,12 @@ h3 {
 
 .row {
   margin: 5px 0;
+  text-transform: capitalize;
 }
 
+li {
+  list-style: none;
+}
 .forecast {
   border-radius: 10px;
   margin: 10px;
