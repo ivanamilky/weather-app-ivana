@@ -27,6 +27,15 @@ h3 {
 }
 .units {
   display: inline;
+  position: relative;
+  top: -20px;
+  margin-left: 0px;
+}
+
+.row strong { 
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 1; 
 }
 
 .row {
