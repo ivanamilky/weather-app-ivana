@@ -1,3 +1,8 @@
+let now = Date.now();
+let dateElement = document.querySelector("#time");
+dateElement.innerHTML = formatDate(now);
+
+
 function formatDate(timestamp) {
     let date = new Date(timestamp);
     let days = [

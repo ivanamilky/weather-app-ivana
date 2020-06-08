@@ -18,17 +18,26 @@ form {
   padding-top: 20px;
   padding-bottom: 15px;
 }
+
 h1 {
   display: inline;
+  font-size: 60px;
 }
+
 h3 {
   display: inline;
   padding-left: 0px;
+  
 }
+
+.descriptionTwo::first-letter {
+   text-transform: uppercase;
+}
+
 .units {
   display: inline;
   position: relative;
-  top: -15px;
+  top: -25px;
   margin-left: 0px;
 }
 
@@ -40,12 +49,13 @@ h3 {
 
 .row {
   margin: 5px 0;
-  text-transform: capitalize;
 }
+
 
 li {
   list-style: none;
 }
+
 .forecast {
   border-radius: 10px;
   margin: 10px;
