@@ -43,6 +43,7 @@ function showTemperaturee(response) {
     dateElement.innerHTML = formatDate(response.data.dt * 1000);
 }
 
+
 function search(event) {
     event.preventDefault();
     let apiKey = "7720c28518514a184cd11489092835d0";
