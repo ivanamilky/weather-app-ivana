@@ -27,16 +27,24 @@ form {
 }
 
 h1 {
+  display: block;
+  font-size: 64px;
+  line-height: 1;
   display: inline;
-  font-size: 60px;
 }
 
 h3 {
   display: inline;
-  padding-left: 0px;
-  
+  padding-left: 5px;  
 }
 
+.icon {
+  height: 44px;
+  width: 44px;
+  margin-right: 5px;
+  top: -15px;
+  position: relative;
+}
 
 .units {
   display: inline;
