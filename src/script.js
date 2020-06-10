@@ -38,9 +38,12 @@ function showTemperaturee(response) {
     let temp = document.querySelector("#temp").innerHTML = Math.round(response.data.main.temp);
     let description = document.querySelector("#description").innerHTML = (response.data.weather[0].description);
     let humidity = document.querySelector("#humidity").innerHTML = (response.data.main.humidity);
+    let pressure = document.querySelector("#pressure").innerHTML = (response.data.main.pressure);
     let wind = document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
     let dateElement = document.querySelector("#time");
+    let iconElement = document.querySelector("#iconone"); 
     dateElement.innerHTML = formatDate(response.data.dt * 1000);
+    iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`); 
 }
 
 
