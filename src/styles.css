@@ -8,7 +8,7 @@ footer {
   bottom: 0;
 }
 .app {
-  width: 40%;
+  width: 50%;
   display: block;
   margin: 0 auto;
   margin-top: 20px;
@@ -73,4 +73,13 @@ li {
   margin: 10px;
   background: rgba(255, 255, 255, 0.4);
   padding-left: 45px;
+}
+
+.row .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+
+.row .active:hover {
+  text-decoration: none;
 }
